@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css">
+    <script type="text/javascript">
+        function validate()
+        {
+            var username =document.getElementById("username");
+            if(username.value=="" || address.value=="" || group.value=="" || number.value==""  )
+            {
+                alert("no blank values allowed");
+            }
+            if(address.value>11)
+            {
+                alert("type")
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="joyleft">
+           
+        </div>
+        <div class="joy">
+            <div class="title">
+                <h1>Blood Group Information</h1>
+            </div>
+            <div class="error"></div>
+
+            <form id="form" action="DB.php"  method="POST"> 
+                <label  for="">Name</label>
+                <input id="username" class="joy1" type="text" name="Name" placeholder="Enter your Name"> <br> <br>
+        
+                <label for="">Address</label>
+                <input id="address" class="joy1" type="text" name="Address" placeholder="Enter your Address"> <br> <br>
+        
+                <label for="">Blood Group</label>
+                <input id="group" class="joy1" type="text" name="Blood_Group" placeholder="Enter your Blood Group"> <br> <br>
+        
+                <label for="">Mobile Number</label>
+                <input id="number" class="joy1" type="Number" name="Mobile_Num" placeholder="Enter your Mobile Number"> <br> <br>
+        
+                <input onclick="validate()" class="button" type="Submit" value="Send">
+            </form>
+            <div class="infobtn">
+                <button class="infobtn1">Blood info</button>
+            </div>
+    
+        </div>
+        
+    </div>
+
+          
+    
+</body>
+</html>
